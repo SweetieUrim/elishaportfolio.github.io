@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://db.onlinewebfonts.com/c/cd1ff12a61d0f65ad3079a7c7461b61f?family=Oilvare+Base" rel="stylesheet">
+    <link href="https://db.onlinewebfonts.com/c/8cdb6b9f81fd5d65941e179961c84065?family=Poppins" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap-icons/bootstrap-icons.css">
+    <title>another test html</title>
+</head>
+
+<body>
+    <div class="whole">
+        <div class="navbar">
+            <div class="head">
+                <a href="#home" class="jejo">
+                    <h3>Portfolio</h3>
+                </a>
+            </div>
+            <div class="menu">
+                <a href="#home" class="menulink"> home </a>
+                <a href="#about" class="menulink"> about </a>
+                <a href="#projects" class="menulink"> projects </a>
+                <a href="#education" class="menulink"> education </a>
+                <a href="#contact" class="menulink"> contact </a>
+            </div>
+        </div>
+        <div class="home" id="home">
+            <div class="row1">
+                <h1 class="me">Hi there</h1>
+                <img src="waving-hand-emoji-clipart-xl.png" alt="" class="hand">
+            </div>
+            <h1 class="I"> I'm Elisha</h1>
+            <h2 class="tagline"> Motivated Computer Science Student - Developing skills in web design & development
+                <span> Looking for internship opportunities </span>
+            </h2>
+            <div class="bokotra">
+                <button class="we we2"><a href="#contact">Let's connect</a></button>
+                <button class="we we1" onclick="downloadCV()"> 📄 Download CV</button>
+            </div>
+            <div class="scrolldown">
+                <a href="#about">
+                    <i class="bi bi-arrow-down-circle"></i>
+                </a>
+            </div>
+        </div>
+        <div class="about scrollappear" id="about">
+            <div class="firstshow">
+                <div class="highlight">
+                    <div class="front">
+                        <h1 class="mitovy">Frontend</h1>
+                        <div class="btn">
+                            <button>HTML</button>
+                            <button>CSS</button>
+                            <button>Bootstrap</button>
+                            <button>JavaScript</button>
+                        </div>
+                    </div>
+                    <div class="front">
+                        <h1 class="mitovy">Backend</h1>
+                        <div class="btn">
+                            <button>PHP</button>
+                            <button>Laravel</button>
+                            <button>MySQL</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="other">
+                    <h1>Other Tools</h1>
+                    <div class="btn">
+                        <button>Canva (graphic design)</button>
+                        <button>Word, Excel, PowerPoint</button>
+                        <button>Audio & Video Editing</button>
+                    </div>
+                </div>
+            </div>
+            <div class="aboutme">
+                <h1 class="Ame">About Me</h1>
+                <div class="Wme">
+                    <h3>
+                        I’m a motivated computer science student passionate about web development and creating
+                        <span>responsive websites</span>. Over the past years, I’ve built projects ranging from a CRUD
+                        application in <span>Laravel & PHP</span> to interactive designs with <span>HTML, CSS,
+                            JavaScript</span>, and <span>Bootstrap</span>.
+                    </h3>
+                    <h3>
+                        My goal is to grow as a <span>front-end developer</span>, contribute to real-world projects, and
+                        continue
+                        learning new technologies that push my skills further.
+                    </h3>
+                </div>
+            </div>
+        </div>
+        <div class="projects" id="projects">
+            <h1 class="sectionproject"> Projects </h1>
+            <div class="imgcontainer">
+                <div><img src="pharmacie.png" alt="" width="380px"></div>
+                <div><img src="laravel.png" alt="" width="380px"></div>
+                <div><img src="weather app.png" alt="" width="380px"></div>
+            </div>
+            <div class="projectcontainer">
+                <div class="projectcard">
+                    <h3>Pharmacy Web App</h3>
+                    <p>Responsive website for a pharmacy with product catalog and interactive features.</p>
+                    <p class="stack">Tech: HTML, CSS, JavaScript</p>
+                </div>
+                <div class="projectcard">
+                    <h3>Medicament Management App</h3>
+                    <p>Web app to manage medicines using CRUD operations.</p>
+                    <p class="stack">Tech: Laravel, PHP, MySQL</p>
+                </div>
+                <div class="projectcard">
+                    <h3>Coming Soon: Weather App</h3>
+                    <p>Planned project to fetch real-time weather data from an API.</p>
+                    <p class="stack">Tech: JavaScript, API Integration</p>
+                </div>
+            </div>
+        </div>
+        <div class="education" id="education">
+            <h1 class="sectioneducation">Education</h1>
+            <div class="educationcontainer">
+                <div class="educationcard">
+                    <img src="graduation-hat.png" alt="" width="50px">
+                    <h3> Bachelor’s Degree in Computer Science</h3>
+                    <p>CNTEMAD – In progress, degree expected 2026</p>
+                    <p>Focus: Front-End Web Development</p>
+                </div>
+                <div class="educationcard">
+                    <img src="programming.png" alt="" width="50px">
+                    <h3>Digital Skills – Intensive Training</h3>
+                    <p>HTML, CSS, JavaScript</p>
+                    <p>Duration: 4 months</p>
+                </div>
+                <div class="educationcard">
+                    <img src="comic.png" alt="" width="50px">
+                    <h3> Communication</h3>
+                    <p>University of Ankatso – Since 2020</p>
+                    <p>Skills applied to digital projects</p>
+                </div>
+            </div>
+        </div>
+        <div class="contact" id="contact">
+            <h1 class="sectioncontact">📬 Let’s Work Together</h1>
+            <p class="contactintro">
+                Curious to collaborate or share ideas?<br> <i class="bi bi-arrow-return-right"></i> I’m an aspiring web
+                developer eager to grow and contribute. I’m seeking internships and opportunities to learn, code, and
+                create meaningful projects together <i class="bi bi-arrow-return-left"></i>
+            </p>
+            <div class="contactinfo">
+                <img src="linkeding.png" alt="" width="500px">
+                <div class="infocourt">
+                    <div class="contactinformation">
+                        <h1>Contact Information</h1>
+                        <p><a href="mailto:elishaleandre@gmail.com">Email: elishaleandre@gmail.com</a></p>
+                        <p class="ano">Number: +261 34 04 575 26</p>
+                        <p>🌍 Based in Madagascar, Antananarivo</p>
+                    </div>
+                    <div class="sociallinks">
+                        <h1>My Social links</h1>
+                        <div class="links">
+                            <div class="whatsapp">
+                                <img src="whatsapp.png" alt="WhatsApp">
+                                <a href="https://wa.me/261340457526" target="_blank"> WhatsApp </a>
+                            </div>
+                            <div class="linkedin">
+                                <img src="linkedin.png" alt="LinkedIn">
+                                <a href="https://www.linkedin.com/in/elisha-yashar-el/?locale=en_US"
+                                    target="_blank">LinkedIn </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <p>&copy; 2025 YASHAR-EL LEANDRE Orima sy Tomima Elisha. Tous droits réservés.</p>
+        </footer>
+        <script>
+            window.addEventListener("scroll", () => {
+                console.log(window.scrollY);
+                const navbar = document.querySelector(".navbar");
+                if (window.scrollY > 50) {
+                    console.log("Scrolled - add class");
+                    navbar.classList.add("scrolled");
+                } else {
+                    console.log("Back to top - remove class");
+                    navbar.classList.remove("scrolled");
+                }
+            });
+            function downloadCV() {
+                const link = document.createElement('a');
+                link.href = 'CV_info_Elisha.pdf';
+                link.download = 'CV_info_Elisha.pdf';
+                link.click();
+            }
+        </script>
+</body>
+
+</html>

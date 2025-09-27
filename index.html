@@ -16,16 +16,17 @@
         <div class="navbar">
             <div class="head">
                 <a href="#home" class="jejo">
-                    <h3>Portfolio</h3>
+                    <h3 class="logo">Portfolio</h3>
                 </a>
             </div>
-            <div class="menu">
+            <div class="menu" id="menu">
                 <a href="#home" class="menulink"> home </a>
                 <a href="#about" class="menulink"> about </a>
                 <a href="#projects" class="menulink"> projects </a>
                 <a href="#education" class="menulink"> education </a>
                 <a href="#contact" class="menulink"> contact </a>
             </div>
+            <i class="bi bi-justify menu-toggle" id="menu-toggle"></i>
         </div>
         <div class="home" id="home">
             <div class="row1">
@@ -95,23 +96,23 @@
         </div>
         <div class="projects" id="projects">
             <h1 class="sectionproject"> Projects </h1>
-            <div class="imgcontainer">
-                <div><img src="pharmacie.png" alt="" width="380px"></div>
-                <div><img src="laravel.png" alt="" width="380px"></div>
-                <div><img src="weather app.png" alt="" width="380px"></div>
-            </div>
             <div class="projectcontainer">
                 <div class="projectcard">
+                    <div><img src="pharmacie.png" alt="Pharmacy Web App"></div>
                     <h3>Pharmacy Web App</h3>
                     <p>Responsive website for a pharmacy with product catalog and interactive features.</p>
                     <p class="stack">Tech: HTML, CSS, JavaScript</p>
                 </div>
+
                 <div class="projectcard">
+                    <div><img src="laravel.png" alt="Medicament Management App"></div>
                     <h3>Medicament Management App</h3>
                     <p>Web app to manage medicines using CRUD operations.</p>
                     <p class="stack">Tech: Laravel, PHP, MySQL</p>
                 </div>
+
                 <div class="projectcard">
+                    <div><img src="weather app.png" alt="Weather App"></div>
                     <h3>Coming Soon: Weather App</h3>
                     <p>Planned project to fetch real-time weather data from an API.</p>
                     <p class="stack">Tech: JavaScript, API Integration</p>
@@ -149,7 +150,7 @@
                 create meaningful projects together <i class="bi bi-arrow-return-left"></i>
             </p>
             <div class="contactinfo">
-                <img src="linkeding.png" alt="" width="500px">
+                <img src="linkeding.png" alt="">
                 <div class="infocourt">
                     <div class="contactinformation">
                         <h1>Contact Information</h1>
@@ -195,6 +196,23 @@
                 link.download = 'CV_info_Elisha.pdf';
                 link.click();
             }
+            const menuToggle = document.getElementById('menu-toggle');
+            const menu = document.querySelector('.menu');
+            const navbar = document.querySelector('.navbar');
+            const menuLinks = document.querySelectorAll('.menu a'); // all links inside menu
+
+            menuToggle.addEventListener('click', () => {
+                menu.classList.toggle('active');       // Show/hide menu
+                navbar.classList.toggle('menu-open');  // Change navbar color
+            });
+
+            // Close menu when a link is clicked
+            menuLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    menu.classList.remove('active');
+                    navbar.classList.remove('menu-open');
+                });
+            });
         </script>
 </body>
 

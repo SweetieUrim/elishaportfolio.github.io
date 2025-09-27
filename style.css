@@ -506,7 +506,7 @@ button {
         top: 15px; /* adjust according to navbar height */
         right: 10px; /* always 10px from right edge */
         z-index: 3000;
-        margin: 60px;
+        margin-right: 60px;
     }
     .row1 {
         flex-direction: column;
@@ -556,6 +556,9 @@ button {
         margin: auto;
         margin-top: 50px;
         justify-content: center;
+        font-size:clamp(16px, 4vw, 24px) ;
+        width: 250px;
+        max-width: 300px;
     }
 
     .aboutme {
@@ -576,7 +579,9 @@ button {
         flex-wrap: wrap;
         max-width: 400px;
     }
-
+    .sectionproject{
+        margin-top: 100px;
+    }
     .projectcard {
         width: 300px;
         /* smaller cards on tablet */
@@ -743,6 +748,7 @@ button {
     .infocourt {
         width: 90%;
         text-align: left;
+        margin-left: 10px;
     }
     .links {
         text-align: left;

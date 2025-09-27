@@ -32,6 +32,7 @@ body {
     background-color: #005F8A;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
+
 .menu-toggle {
     display: none;
 }
@@ -483,46 +484,57 @@ button {
         gap: 20px;
         z-index: 2000;
     }
+
     .menu.active {
         display: flex;
     }
-    .navbar{
+
+    .navbar {
         justify-content: space-between;
         padding: auto;
     }
-    .logo{
+
+    .logo {
         margin: 20px auto;
         margin-left: 20px;
     }
+
     .navbar.menu-open {
         background-color: #005F8A;
     }
+
     .menu-toggle {
         display: block;
         font-size: clamp(28px, 4vw, 32px);
         cursor: pointer;
         color: white;
         position: absolute;
-        top: 15px; /* adjust according to navbar height */
-        right: 10px; /* always 10px from right edge */
+        top: 15px;
+        /* adjust according to navbar height */
+        right: 10px;
+        /* always 10px from right edge */
         z-index: 3000;
         margin-right: 60px;
     }
+
     .row1 {
         flex-direction: column;
         margin-bottom: -50px;
     }
+
     .whole {
-    width: 100%;
-    text-align: center;
-    background-color: #00679b;
+        width: 100%;
+        text-align: center;
+        background-color: #00679b;
     }
+
     .me,
     .I {
         font-size: clamp(50px, 8vw, 90px);
         text-align: center;
         max-width: 700px;
     }
+
     .hand {
         width: 140px;
         height: auto;
@@ -544,7 +556,8 @@ button {
     }
 
     .firstshow,
-    .highlight, .bokotra {
+    .highlight,
+    .bokotra {
         width: 90%;
         max-width: 600px;
         margin-left: 20px auto;
@@ -553,11 +566,15 @@ button {
     }
 
     .other {
-        width: 90%;
-        margin: auto;
-        justify-content: center;
-        font-size:clamp(14px, 2vw, 22px) ;
+        width: 170px;
+        height: 170px;
+        background-color: #013057;
+        padding: 30px;
+        padding-top: 10px;
+        margin-top: 30px;
         text-align: center;
+        border-radius: 5px;
+        justify-content: center;
     }
 
     .aboutme {
@@ -571,29 +588,36 @@ button {
     .projects {
         margin-top: 100px;
     }
+
     .projectcontainer {
         justify-content: center;
         gap: 70px;
         flex-wrap: wrap;
         max-width: 400px;
     }
-    .projects{
+
+    .projects {
         margin-top: 100px;
     }
+
     .projectcard {
         width: 300px;
         /* smaller cards on tablet */
     }
-    .education{
+
+    .education {
         margin-top: 100px;
     }
+
     .educationcontainer {
         flex-direction: column;
         align-items: center;
     }
-    .sectioncontact{
+
+    .sectioncontact {
         font-size: clamp(50px, 8vw, 90px);
     }
+
     .contactinfo {
         flex-direction: column;
         margin: 20px auto;
@@ -603,24 +627,28 @@ button {
 
     .contactinfo img {
         width: 80%;
-        max-width: 400px; /* keeps it reasonable on larger tablets */
+        max-width: 400px;
+        /* keeps it reasonable on larger tablets */
         margin: 0 auto 20px auto;
         display: block;
         height: auto;
     }
+
     .sociallinks img {
-    width: 25px;
-    height: 25px;
-    object-fit: contain;
-    margin-top: 10px;
+        width: 25px;
+        height: 25px;
+        object-fit: contain;
+        margin-top: 10px;
     }
-    .contactintro{
+
+    .contactintro {
         width: 90%;
         max-width: 700px;
         margin: 20px auto;
         text-align: center;
         font-size: clamp(16px, 2vw, 22px);
     }
+
     .infocourt {
         margin-left: 0;
         width: 90%;
@@ -630,14 +658,15 @@ button {
         margin-left: 210px;
         justify-content: center;
     }
+
     .links a {
-    margin-top:-10px;
-    color: white;
+        margin-top: -10px;
+        color: white;
     }
-    
+
 }
 
-@media (max-width: 600px){
+@media (max-width: 600px) {
     .menu {
         display: none;
         position: fixed;
@@ -655,14 +684,17 @@ button {
     .menu.active {
         display: flex;
     }
-    .navbar{
+
+    .navbar {
         justify-content: space-between;
         padding-left: 20px;
         padding-right: 10px;
     }
+
     .navbar.menu-open {
         background-color: #005F8A;
     }
+
     .menu-toggle {
         display: block;
         font-size: 32px;
@@ -677,7 +709,8 @@ button {
         margin-bottom: -50px;
     }
 
-    .me, .I {
+    .me,
+    .I {
         font-size: clamp(50px, 12vw, 100px);
         text-align: center;
     }
@@ -689,12 +722,15 @@ button {
         margin: 10px auto;
         font-size: clamp(16px, 4vw, 24px);
     }
+
     .bokotra {
         text-align: center;
         font-size: clamp(14px, 3vw, 18px);
     }
 
-    .about, .firstshow, .highlight {
+    .about,
+    .firstshow,
+    .highlight {
         flex-direction: column;
         align-items: center;
         margin: auto;
@@ -706,17 +742,22 @@ button {
     }
 
     .other {
-        width: 90%;
-        margin: auto;
-        justify-content: center;
-        font-size:clamp(14px, 2vw, 22px) ;
+        width: 170px;
+        height: 170px;
+        background-color: #013057;
+        padding: 30px;
+        padding-top: 10px;
+        margin-top: 30px;
         text-align: center;
+        border-radius: 5px;
+        justify-content: center;
     }
 
     .aboutme {
         text-align: center;
     }
-    .projects{
+
+    .projects {
         margin-top: 10px;
     }
 
@@ -728,9 +769,11 @@ button {
     .projectcard {
         width: 280px;
     }
-    .sectioneducation{
+
+    .sectioneducation {
         margin-top: 100px;
     }
+
     .educationcontainer {
         flex-direction: column;
         align-items: center;
@@ -752,12 +795,14 @@ button {
         text-align: left;
         margin-left: 110px;
     }
+
     .links {
         text-align: left;
         margin-left: 0;
     }
+
     .links a {
-    margin-top:-15px;
-    color: white;
+        margin-top: -15px;
+        color: white;
     }
 }

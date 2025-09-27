@@ -553,9 +553,11 @@ button {
     }
 
     .other {
+        width: 90%;
         margin: auto;
         justify-content: center;
         font-size:clamp(14px, 2vw, 22px) ;
+        text-align: center;
     }
 
     .aboutme {
@@ -569,19 +571,21 @@ button {
     .projects {
         margin-top: 100px;
     }
-
     .projectcontainer {
         justify-content: center;
         gap: 70px;
         flex-wrap: wrap;
         max-width: 400px;
     }
-    .sectionproject{
-        margin-top: 10px;
+    .projects{
+        margin-top: 100px;
     }
     .projectcard {
         width: 300px;
         /* smaller cards on tablet */
+    }
+    .education{
+        margin-top: 100px;
     }
     .educationcontainer {
         flex-direction: column;
@@ -702,8 +706,10 @@ button {
     }
 
     .other {
-        margin-left: 0;
-        margin: 20px auto;
+        width: 90%;
+        margin: auto;
+        justify-content: center;
+        font-size:clamp(14px, 2vw, 22px) ;
         text-align: center;
     }
 

@@ -554,11 +554,8 @@ button {
 
     .other {
         margin: auto;
-        margin-top: 50px;
         justify-content: center;
-        font-size:clamp(16px, 4vw, 24px) ;
-        width: 250px;
-        max-width: 300px;
+        font-size:clamp(14px, 2vw, 22px) ;
     }
 
     .aboutme {
@@ -580,7 +577,7 @@ button {
         max-width: 400px;
     }
     .sectionproject{
-        margin-top: 100px;
+        margin-top: 10px;
     }
     .projectcard {
         width: 300px;
@@ -707,7 +704,6 @@ button {
     .other {
         margin-left: 0;
         margin: 20px auto;
-        align-items: center;
         text-align: center;
     }
 
@@ -748,7 +744,7 @@ button {
     .infocourt {
         width: 90%;
         text-align: left;
-        margin-left: 10px;
+        margin-left: 110px;
     }
     .links {
         text-align: left;

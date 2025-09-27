@@ -480,11 +480,12 @@ button {
         background-color: #005F8A;
         padding: 20px;
         border-radius: 10px;
-        flex-direction: column;
         gap: 20px;
         z-index: 2000;
     }
-
+    .menulink{
+        margin-left: 0;
+    }
     .menu.active {
         display: flex;
         flex-direction: column;
@@ -515,7 +516,7 @@ button {
         top: 15px;
         right: 10px;
         z-index: 3000;
-        margin-right: 60px;
+        margin-right: 70px;
     }
 
     .row1 {
@@ -561,7 +562,6 @@ button {
     .bokotra {
         width: 90%;
         max-width: 600px;
-        margin-left: 20px auto;
         text-align: center;
         font-size: clamp(14px, 2vw, 22px)
     }

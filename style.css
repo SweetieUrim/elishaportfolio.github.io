@@ -691,7 +691,9 @@
         border-radius: 5px;
     }
     .aboutme {
-        width: 600px;
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
     }
 
     .Ame {
@@ -1014,19 +1016,19 @@
     }
 
     .tagline {
-        width: 90%;
-        max-width: 90%;
+        width: 100%;
+        max-width: 600px;
         font-family: 'poppins', sans-serif;
         text-align: center;
         margin: 15px auto;
-        font-size: clamp(14px, 4vw, 20px);
+        font-size: clamp(14px, 5vw, 20px);
     }
     span {
         color: #013057;
     }
     .bokotra a{
         color: #000000;
-        text-decoration: none;
+        text-decoration: none;  
         font-family: 'poppins', sans-serif;
         text-align: center;
         font-size: clamp(12px, 3vw, 16px);
@@ -1092,8 +1094,7 @@
 
     .firstshow {
         width: 100%;
-        margin: 15px auto;
-        text-align: center;
+        margin: 15px auto;  
     }
 
     .highlight {
@@ -1106,22 +1107,18 @@
     }
 
     .aboutme {
-        text-align: center;
         font-size: clamp(14px, 4vw, 18px);
         margin-top: 20px;
     }
     .Ame {
         font-family: 'oilvare base', sans-serif;
         font-size: 40px;
-        text-align: center;
     }
-    .Wme {
-        font-family: 'poppins', sans-serif;
-        max-width: 90%;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-    }
+    .Wme { 
+        font-family: 'poppins', sans-serif; 
+        max-width: 100%; 
+        box-sizing: border-box;
+     }
 
     /* PROJECTS */
     .projects {
